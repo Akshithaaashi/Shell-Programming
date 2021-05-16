@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Enter a Number:"
+ read number
+
+expression=2
+result=1
+while [  $result -le 256 ]
+do
+    echo  "power table of the $number is:$result"
+
+    result=$(($result*$expression))
+
+done
